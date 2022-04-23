@@ -3,9 +3,12 @@
 con una frase ya grabada y mostrarnos nuestra historia loca"""
 
 
-from pyparsing import original_text_for
+#print("Aprende a pogramar con " + organizacion)
+#print("Aprende a pogramar con {}".format(organizacion))
+#print(f"Aprende a programar con {organizacion}")
 
 
-organizacion = "FreeCodeCamp"
-
-print("Aprende a pogramar con " + organizacion)
+adj  = input("Ingrese un adj: ")
+sentimiento = input("Ingrese un sentimiento: ")
+diminutivo = input("Ingrese un dimininutivo (mucho o poco): ")
+print(f"Programar es tan {adj},Siempre emociona y me hace sentir {sentimiento}, en este curso estoy aprendiendo {diminutivo}")
