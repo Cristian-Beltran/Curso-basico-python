@@ -1,5 +1,6 @@
-
 import random
+
+
 def adivinaElNumero(x):
     print("=====================") 
     print("Bienvenido/a al juego")
@@ -10,7 +11,14 @@ def adivinaElNumero(x):
 
     prediccion = 0
 
-    while(prediccion == numeroAleatorio):
-        input(f"Ingrese un numero entre 1 y {x}: ")
-        if(prediccion != numeroAleatorio):
-            print("ops no adivinaste el numero")
+    while(prediccion != numeroAleatorio):
+        prediccion = int(input(f"Ingrese un numero entre 1 y {x}: "))
+        if(prediccion > numeroAleatorio):
+            print("Intenta otra vez este numero es muy grande")
+        else:
+            print("Intenta otra vez este numero es muy pequeño")
+    
+    print(f"Feliciataciones adivinaste el numero {numeroAleatorio}")
+
+
+adivinaElNumero(10);
